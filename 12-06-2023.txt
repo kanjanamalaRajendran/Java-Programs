@@ -1,0 +1,303 @@
+java class
+____________
+
+DATA TYPE 
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int num1 = 4;
+        int num2 = 5;
+        byte a = 127;
+        System.out.println(a);
+        System.out.println(num1+num2);
+        System.out.println((float)num1);
+        System.out.println((char)num2);
+        System.out.println((char)65);
+         System.out.println((double)num1);
+    }
+}
+
+
+OUTPUT
+
+127
+9
+4.0
+
+A
+4.0
+
+create object
+______________
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        cse b = new cse();
+        b.faculty = 1;
+        b.teaching ();
+        
+    }
+}
+class cse{
+    int faculty;
+    void  teaching()
+    {
+        System.out.println("java");
+        System.out.println(faculty);
+    }
+}
+
+
+
+output
+
+java
+1
+
+
+lable formet
+____________
+
+
+ class Main{
+    public static void main (String args[]){
+         int a = 65;
+        for (int i=1;i<7;i++){
+            for(int k=6;k>i;k--){
+                 System.out.print(" ");
+            }
+            for (int j=1;j<=i;j++){
+                System.out.print((char)a);
+                System.out.print(" ");
+                a++;
+       
+            }
+             System.out.println();
+        }      
+    }
+}
+
+
+
+output
+
+
+       A
+      B C
+     D E F
+    G H I J
+   K L M N O 
+  P Q R S T U
+
+
+
+faild program
+
+
+class Main{
+    public static void main (String args[]){
+         int a = 65;
+        for (int i=1;i<7;i++){
+            for(int k=1;k<i;k++){
+                 System.out.print(" ");
+            }
+        for (int j=6;j>=i;j--){
+                System.out.print((char)a);
+                System.out.print(" ");
+                a++;
+       
+            }
+             System.out.println();
+        }      
+    }
+}
+output
+ 
+A B C D E F 
+ G H I J K
+  L M N O
+   P Q R
+    S T
+     U
+
+
+constructor
+___________
+
+
+implicit calling CSE CONSTUCTOR 
+
+
+class Main{
+    public static void main (String args[]){
+      CSE a = new CSE();
+      System.out.println(a.faculty);
+      a.teaching();
+   }
+}
+class CSE {
+    int faculty;
+    void teaching()
+    {
+        System.out.println("Java");
+    }
+}
+
+
+
+output 
+
+0
+Java
+
+
+________________________
+class Main{
+public static void main(String args[])
+{
+   int a = 6;
+   for (int i = 1; i <= a; i++) {
+for (int k = 1; k <= i; k++) {
+if (k == 1 || k == i || i == a)
+System.out.print(i + " ");
+else
+System.out.print("  ");
+}
+System.out.println();
+}
+}
+
+
+}
+
+
+
+output
+
+
+1
+2 2
+3  3
+4   4
+5    5
+6 6 6 6
+
+
+
+____________________________________________
+
+
+
+class Main{
+public static void main(String args[])
+{
+   int a = 6;
+   for (int i = 1; i <= a; i++) {
+for (int k = 1; k <= i; k++) {
+if (k == 1 || k == i || i == a)
+System.out.print(k + " ");
+else
+System.out.print("  ");
+}
+System.out.println();
+}
+}
+
+
+}
+
+
+
+output
+
+
+1
+1 2
+1  3
+1   4
+1    5
+1 23456
+
+
+
+class Main{
+    public static void main (String args[]){
+       
+for(int i=1;i<=5;i++){
+int a=1;
+for(int j=0;j<i;j++){
+if(i==5){
+System.out.print(a+" ");
+a++;
+continue;
+}
+if(i-j==1||j==0){
+System.out.print(a+" ");
+}
+else{
+System.out.print("  ");
+}
+a++;
+}
+System.out.println();
+}
+
+}
+}
+
+
+output 
+  
+
+
+1 
+1  2
+1    3
+1      4
+1 2 3 4 5
+
+
+
+
+pattern program 
+__________________
+
+public class Main
+{
+	public static void main(String[] args) {
+		byte n=1; int c=2;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=9;j++){
+                if(i==5 && (j%2==1)){
+                    System.out.print(n);
+                    n++;
+                    continue;
+                }
+                if(i-j==-4){
+                    System.out.print(i);
+                }
+                else if(i!=1 && j-i==c){
+                    System.out.print(i);
+                    c=c-2;
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }    
+	}
+}
+
+
+
+output
+__________
+
+
+    1    
+   2 2   
+  3   3  
+ 4     4 
+1 2 3 4 5
