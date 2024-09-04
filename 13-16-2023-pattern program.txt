@@ -1,0 +1,226 @@
+pattern program in while 
+_______________________________
+
+
+
+
+class Main {
+    public static void main(String args[]){
+        int i=1;
+        while (i<=5)
+        {
+            int j = 1;
+            while(j<=i)
+            {
+                
+                System.out.print("* ");
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+        
+    
+    }
+}
+
+
+
+*
+* *
+* * *
+* * * *
+* * * * *
+
+
+pattern program in do while
+____________________________
+
+
+class Main {
+    public static void main(String args[]){
+        int i=1;
+        do
+        {
+            int j = 1;
+            do
+            {
+                
+                System.out.print("* ");
+                j++;
+            } while(j<=i);
+            System.out.println();
+            i++;
+        }while (i<=5);
+        
+    
+    }
+}
+
+
+output
+
+
+
+*
+* *
+* * *
+* * * *
+* * * * *
+
+
+pattern program 
+_________________
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    byte a=1;
+	    byte b=4;
+	    int n=5;
+		for(int i=1;i<=5;i++){
+		    for(int j=0;j<i;j++){
+		        if(i==5){
+		            if(n>0){
+		            System.out.print(n+" ");
+		            n--;
+		            continue;
+		            }
+		        }
+		        if(j==0){
+		            System.out.print(a);
+		            a++;
+		        }
+		        else if(i-j==1){
+		            System.out.print(" "+b);
+		            b--;
+		        }
+		        else{
+		            System.out.print("  ");
+		        }
+		    }
+		    System.out.println();
+		}
+	}
+}
+
+
+
+1
+
+2   4
+
+3       3
+
+4           2
+
+5   4   3   2   1
+
+
+
+
+not finish
+
+
+class Main{
+    public static void main(String args[]){
+        for(int i=1;i<=10;i++){
+            for(int j=1;j<=10;j++){
+                if(i==1||i==10){
+                    System.out.print(" *");
+                    continue;
+                }
+                if(j==1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+        }
+    }
+}\
+
+
+
+
+
+
+
+
+
+
+
+
+pattern program
+________________________
+
+
+class Main{
+    public static void main(String args[]){
+        for(int i=1;i<7;i++){
+            for(int j=6;j>=i;j--){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+output
+______
+
+
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+
+
+
+pattern program
+____________________
+
+
+
+class Main{
+    public static void main(String args[]){
+        int a=1;
+        for(int i=1;i<6;i++){
+            for(int j=1;j<=5;j++){
+                if(j==1){
+                System.out.print("*");
+            }
+            if((j==4 && i==1)||(j==3 && i==2)||(j==2 && i==3)||(j==3 && i==4)||(j==4 && i==5)){
+                System.out.print("*");
+            }
+            else{
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+    }
+  }
+}
+
+
+
+output
+________
+
+
+*   * 
+*  *  
+* *   
+*  *  
+*   * 
+
+
+
+
